@@ -96,7 +96,7 @@ class BinarySearchTree {
         return this.root;
     }
 
-    // search order left subtree -> root -> right subtree
+    // search order: left subtree -> root -> right subtree
     inorder(node) {
         if (node !== null) {
             this.inorder(node.left);
@@ -105,7 +105,7 @@ class BinarySearchTree {
         }
     }
 
-    // search order root -> left subtree -> right subtree
+    // search order: root -> left subtree -> right subtree
     preorder(node) {
         if (node != null) {
             console.log(node.data);
@@ -114,7 +114,7 @@ class BinarySearchTree {
         }
     }
 
-    // search order left subtree -> right subtree -> root
+    // search order: left subtree -> right subtree -> root
     postorder(node) {
         if (node != null) {
             this.postorder(node.left);
